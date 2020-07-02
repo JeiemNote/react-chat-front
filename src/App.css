@@ -1,0 +1,400 @@
+.App {
+  text-align: center;
+  background-color: #282c34;
+  height: 100vh;
+  min-width: 800px;
+  min-height: 600px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+}
+.LeftSideBar{
+  background-color: dodgerblue;
+  width: 30%;
+  height: auto;
+}
+.ProfileBar {
+  width: 100%;
+  min-height: 80px;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  border-bottom-style: solid;
+  border-bottom-color: darkgrey;
+  border-bottom-width: 1px;
+
+}
+.ProfileAvatar img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.ProfileAvatar {
+  margin-left: 7%;
+  margin-top: 13px;
+  margin-bottom: 13px;
+  width: 50px;
+  height: 50px;
+}
+.Profile{
+  margin-top: 13px;
+  margin-bottom: 13px;
+  margin-left: 7%;
+  text-align: left;
+  color: #282c34;
+  font-size: 18px;
+  height: auto;
+  text-shadow: 0 1px 1px #282c34;
+}
+.ProfileEdit {
+  margin-top: 23px;
+  margin-bottom: 13px;
+
+  border: none;
+  background-color: white;
+}
+.ProfileEdit img, .ProfilePlus img  {
+  width: 30px;
+  height: auto;
+}
+.ProfilePlus {
+  margin-top: 23px;
+  margin-bottom: 13px;
+  margin-left: 3%;
+  border: none;
+  background-color: white;
+  margin-right: 3%;
+}
+.ProfileButtons {
+  display: flex;
+  flex-direction: row;
+  margin-left: 10%;
+  margin-right: 3%;
+  justify-content: flex-end;
+}
+.ChatsSearch {
+  background-color: white;
+  width: 100%;
+  height: 80px;
+  border-bottom-style: solid;
+  border-bottom-color: darkgrey;
+  border-bottom-width: 1px;
+}
+.ChatsSearch input {
+  width: 60%;
+  height: 40px;
+  padding-left: 10px;
+  margin-top: 3%;
+  font-size: 18px;
+  border-radius: 15px;
+}
+.UsersItem {
+  width: 100%;
+  height: 79.7%;
+  display: block;
+  overflow: auto;
+  max-height: 100vh;
+}
+.FriendUser{
+  width: 100%;
+  min-height: 80px;
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  border-bottom-style: solid;
+  border-bottom-color: darkgrey;
+  border-bottom-width: 1px;
+}
+.FriendAvatar {
+  margin-top: 13px;
+  margin-bottom: 13px;
+  margin-left: 7%;
+}
+.FriendAvatar img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.FriendBar{
+  margin-left: 3%;
+}
+.FriendName {
+  margin-top: 25px;
+  margin-left: 3%;
+  text-align: left;
+  color: #282c34;
+  font-size: 18px;
+  height: auto;
+  text-shadow: 0 1px 1px #282c34;
+}
+.FriendLastMessage {
+  margin-bottom: 15px;
+  text-align: left;
+  color: darkgrey;
+  font-size: 16px;
+  height: auto;
+}
+
+
+
+.DialogsWindow {
+  border-left-style: solid;
+  border-left-color: darkgrey;
+  border-left-width: 1px;
+  background-color: darkgrey;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+.UserNameBar {
+  background-color: white;
+  border-bottom-style: solid;
+  border-bottom-color: darkgrey;
+  border-bottom-width: 1px;
+  width: 100%;
+  min-height: 80px;
+  display: flex;
+  flex-direction: row;
+}
+.UserNameAvatar {
+  border-radius: 50%;
+  margin-left: 7%;
+  margin-top: 13px;
+  margin-bottom: 13px;
+  width: 50px;
+  height: 50px;
+}
+.UserNameAvatar img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.User {
+  margin-top: 15px;
+  margin-left: 3%;
+  margin-bottom: 15px;
+  text-align: left;
+  color: #282c34;
+  font-size: 18px;
+  height: auto;
+  text-shadow: 0 1px 1px #282c34;
+}
+.UserCall {
+  margin-top: 23px;
+  margin-bottom: 23px;
+  margin-left: 7%;
+  border: none;
+  background-color: white;
+}
+.UserVideoCall {
+  margin-top: 23px;
+  margin-bottom: 23px;
+  margin-left: 7%;
+  border: none;
+  background-color: white;
+}
+.UserMenu {
+  margin-top: 23px;
+  margin-bottom: 23px;
+  margin-left: 7%;
+  border: none;
+  background-color: white;
+}
+.UserMenu img, .UserVideoCall img, .UserCall img {
+  width: 30px;
+  height: auto;
+}
+.UsersButtons {
+  /*background-color: #282c34;*/
+  /*min-width: 250px;*/
+  margin-left: 50%;
+  display: flex;
+  flex-direction: row;
+  margin-right: 3%;
+  justify-content: flex-end;
+}
+
+
+.active {
+  background-color: #cccccc;
+}
+
+
+.DialogWrapper {
+  height: 79%;
+  background-color: white;
+  border-bottom-style: solid;
+  border-bottom-color: darkgrey;
+  border-bottom-width: 1px;
+  color: #282c34;
+  text-align: left;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  overflow: auto;
+  display: block;
+}
+.MessageForMe {
+  display: inline-block;
+  clear: both;
+  float: left;
+  width: 100%;
+}
+.InfoForMe {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+}
+.MessageAvatar {
+  width: 50px;
+  height: 50px;
+  background: url("img/avatars/user1.jpg");
+  background-size: cover;
+  border-radius: 50%;
+}
+.MessageUserName {
+  padding-left: 20px;
+  text-align: left;
+  font-size: 16px;
+  color: #282c34;
+  text-shadow: 0 1px 1px #282c34;
+}
+.MessageTime {
+  padding-left: 20px;
+}
+.MessageBody {
+  display: inline-block;
+  margin-top: 20px;
+  max-width: 60%;
+  height: auto;
+  background-color: dodgerblue;
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 20px;
+
+}
+.MyMessage {
+  display: inline-block;
+  clear: both;
+  float: right;
+  width: 100%;
+}
+.InfoForUser {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.MyMessageAvatar {
+   width: 50px;
+   height: 50px;
+   background: url("img/avatars/main.jpg");
+   background-size: cover;
+   border-radius: 50%;
+   margin-right: 20px;
+ }
+.MyMessageUserName {
+  padding-right: 20px;
+  text-align: left;
+  font-size: 16px;
+  color: #282c34;
+  text-shadow: 0 1px 1px #282c34;
+}
+.MyMessageTime {
+  padding-left: 20px;
+}
+.MyMessageBody {
+  display: inline-block;
+  margin-top: 20px;
+  max-width: 60%;
+  height: auto;
+  float: right;
+  background-color: dodgerblue;
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+
+
+
+.SendPlace {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  width: 100%;
+  height: 10%;
+  text-align: left;
+
+}
+.SendPlace input {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  width: 80%;
+  height: 60%;
+  border-radius: 20px;
+  padding-left: 20px;
+}
+.Send {
+  margin-left: 40px;
+  border: none;
+  background-color: white;
+}
+.Send img {
+  width: 30px;
+  height: auto;
+}
+
+
+
+
+
+.DialogWrapper::-webkit-scrollbar {
+  width: 7px;
+}
+.DialogWrapper::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+.DialogWrapper::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+.DialogWrapper::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.UsersItem::-webkit-scrollbar {
+  width: 7px;
+}
+.UsersItem::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+.UsersItem::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+.UsersItem::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
